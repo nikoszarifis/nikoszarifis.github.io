@@ -1,0 +1,12 @@
+#!/bin/bash
+bundle exec jekyll serve &
+pid=$!
+sleep 3
+echo $pid
+kill $pid
+cp -av _site/* ../mysite2/.
+cd ..
+cd mysite2
+git add *
+git commit -m "new commit"
+git push
