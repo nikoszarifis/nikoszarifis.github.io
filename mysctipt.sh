@@ -4,6 +4,7 @@ pid=$!
 sleep 3
 echo $pid
 kill $pid
+cp -av * ~/Dropbox/mysites/.
 cp -av _site/* ../mysite2/.
 cd ..
 cd mysite2
