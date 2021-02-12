@@ -37,7 +37,7 @@
 <meta property="og:url" content="http://localhost:4000/" />
 <meta property="og:site_name" content="Nikos Zarifis" />
 <script type="application/ld+json">
-{"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/img/img1.jpeg"}},"headline":"Nikos Zarifis","url":"http://localhost:4000/","name":"Nikos Zarifis","description":"Nikos Zarifis’ Homepage","@type":"WebSite","@context":"https://schema.org"}</script>
+{"url":"http://localhost:4000/","name":"Nikos Zarifis","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/img/img1.jpeg"}},"description":"Nikos Zarifis’ Homepage","headline":"Nikos Zarifis","@type":"WebSite","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   <link rel="stylesheet" href="/assets/css/style.css?v=">
@@ -163,19 +163,20 @@ information you can take a look in my <a href="./assets/img/cv.pdf">CV</a>.</p>
 
     <span class="periodical">
     
-      <em>Manuscript</em>
-      
+      <em>In stoc2021</em>
+    
     </span>
   
 <span id="DKKTZ20-materials">
  
     <!-- <li><a data-toggle="collapse" href="javascript:toggleDiv('DKKTZ20-bibtex')">BibTeX</a></li> -->
     <!-- <div id="DKKTZ20-bibtex" style="display:none;"> -->
-    <!-- <pre class="collapse">@misc{DKKTZ20,
+    <!-- <pre class="collapse">@inproceedings{DKKTZ20,
   title = {A Polynomial Time Algorithm for Learning Halfspaces with Tsybakov Noise},
   author = {Diakonikolas, Ilias and Kane, Daniel M. and Kontonis, Vasilis and Tzamos, Christos and Zarifis, Nikos},
   year = {2020},
   note = {Manuscript},
+  booktitle = stoc2021,
   arxiv = {2010.01705},
   archiveprefix = {arXiv},
   primaryclass = {cs.LG}
@@ -235,6 +236,155 @@ log-concave distributions involves a number of analytic tools that may be of
 broader interest. These include a new efficient method for reweighting the
 distribution in order to recenter it and a novel characterization of the
 spectrum of the degree-$2$ Chow parameters.</p> -->
+  <!-- </span> -->
+  <!--  -->
+</div>
+</li>
+<li>
+
+<div id="DKTZ20b">
+  
+    <span class="title">Learning Halfspaces with Tsybakov Noise <span class="nav">
+    
+    [<a data-toggle="collapse" href="#DKTZ20b-abstract">abstract</a>]
+    
+     
+    [<a href="http://arxiv.org/abs/2006.06467" target="_blank">arxiv</a>] 
+    
+    
+    
+  </span>
+    </span>
+    <span class="author">
+      
+        
+          
+            
+              
+                <a href="http://www.iliasdiakonikolas.org" target="_blank">  Ilias Diakonikolas</a>, 
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                <a href="http://vkonton.github.io" target="_blank">  Vasilis Kontonis</a>, 
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                <a href="http://www.tzamos.com" target="_blank">  Christos Tzamos</a>, 
+              
+            
+          
+        
+      
+        
+          
+            
+              and <em>Nikos Zarifis</em>
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>In stoc2021b</em>
+    
+    </span>
+  
+<span id="DKTZ20b-materials">
+ 
+    <!-- <li><a data-toggle="collapse" href="javascript:toggleDiv('DKTZ20b-bibtex')">BibTeX</a></li> -->
+    <!-- <div id="DKTZ20b-bibtex" style="display:none;"> -->
+    <!-- <pre class="collapse">@inproceedings{DKTZ20b,
+  title = {Learning Halfspaces with Tsybakov Noise},
+  author = {Diakonikolas, Ilias and Kontonis, Vasilis and Tzamos, Christos and Zarifis, Nikos},
+  year = {2020},
+  note = {Manuscript},
+  eprint = {2006.06467},
+  arxiv = {2006.06467},
+  booktitle = stoc2021b,
+  archiveprefix = {arXiv},
+  primaryclass = {cs.LG}
+}
+</pre> -->
+    <!-- </div> -->
+
+
+  
+  <p id="DKTZ20b-abstract" class="collapse" style="border: 1px dashed
+         black;padding:2px;
+  font-size:11px">We study the efficient PAC
+  learnability of halfspaces in the presence of Tsybakov noise. In the Tsybakov
+  noise model, each label is independently flipped with some probability which
+  is controlled by an adversary. This noise model significantly generalizes the
+  Massart noise model, by allowing the flipping probabilities to be arbitrarily
+  close to $1/2$ for a fraction of the samples. Our main result is the first
+  non-trivial PAC learning algorithm for this problem under a broad family of
+  structured distributions -- satisfying certain concentration and
+  (anti-)anti-concentration properties -- including log-concave distributions.
+  Specifically, we given an algorithm that achieves misclassification error
+  $\epsilon$ with respect to the true halfspace, with quasi-polynomial runtime
+  dependence in $1/\epsilon$. The only previous upper bound for this problem --
+  even for the special case of log-concave distributions -- was doubly
+  exponential in $1/\epsilon$ (and follows via the naive reduction to agnostic
+  learning). Our approach relies on a novel computationally efficient procedure
+  to certify whether a candidate solution is near-optimal, based on
+  semi-definite programming. We use this certificate procedure as a black-box
+  and turn it into an efficient learning algorithm by searching over the space
+  of halfspaces via online convex optimization.</p>
+  
+
+</span>
+  <!-- <span class="links"> -->
+  <!--  -->
+  <!--   [<a class="abstract">Abstract</a>] -->
+  <!--  -->
+  <!--  -->
+  <!--   [<a href="http://arxiv.org/abs/2006.06467"
+    target="_blank">arXiv</a>] -->
+  <!--  -->
+  <!--  -->
+  <!--  -->
+  <!--  -->
+  <!--  -->
+  <!--  -->
+  <!--  -->
+  <!-- </span> -->
+
+  <!-- <!-1- Hidden abstract block -1-> -->
+  <!--  -->
+  <!-- <span class="abstract hidden"> -->
+  <!--   <p>We study the efficient PAC
+  learnability of halfspaces in the presence of Tsybakov noise. In the Tsybakov
+  noise model, each label is independently flipped with some probability which
+  is controlled by an adversary. This noise model significantly generalizes the
+  Massart noise model, by allowing the flipping probabilities to be arbitrarily
+  close to $1/2$ for a fraction of the samples. Our main result is the first
+  non-trivial PAC learning algorithm for this problem under a broad family of
+  structured distributions -- satisfying certain concentration and
+  (anti-)anti-concentration properties -- including log-concave distributions.
+  Specifically, we given an algorithm that achieves misclassification error
+  $\epsilon$ with respect to the true halfspace, with quasi-polynomial runtime
+  dependence in $1/\epsilon$. The only previous upper bound for this problem --
+  even for the special case of log-concave distributions -- was doubly
+  exponential in $1/\epsilon$ (and follows via the naive reduction to agnostic
+  learning). Our approach relies on a novel computationally efficient procedure
+  to certify whether a candidate solution is near-optimal, based on
+  semi-definite programming. We use this certificate procedure as a black-box
+  and turn it into an efficient learning algorithm by searching over the space
+  of halfspaces via online convex optimization.</p> -->
   <!-- </span> -->
   <!--  -->
 </div>
@@ -479,154 +629,6 @@ spectrum of the degree-$2$ Chow parameters.</p> -->
   <!--  -->
   <!-- <span class="abstract hidden"> -->
   <!--   <p>We study the problem of agnostically learning homogeneous halfspaces in the distribution-specific PAC model. For a broad family of structured distributions, including log-concave distributions, we show that non-convex SGD efficiently converges to a solution with misclassification error $O(\opt)+\eps$, where $\opt$ is the misclassification error of the best-fitting halfspace. In sharp contrast, we show that optimizing any convex surrogate inherently leads to misclassification error of $\omega(\opt)$, even under Gaussian marginals.</p> -->
-  <!-- </span> -->
-  <!--  -->
-</div>
-</li>
-<li>
-
-<div id="DKTZ20b">
-  
-    <span class="title">Learning Halfspaces with Tsybakov Noise <span class="nav">
-    
-    [<a data-toggle="collapse" href="#DKTZ20b-abstract">abstract</a>]
-    
-     
-    [<a href="http://arxiv.org/abs/2006.06467" target="_blank">arxiv</a>] 
-    
-    
-    
-  </span>
-    </span>
-    <span class="author">
-      
-        
-          
-            
-              
-                <a href="http://www.iliasdiakonikolas.org" target="_blank">  Ilias Diakonikolas</a>, 
-              
-            
-          
-        
-      
-        
-          
-            
-              
-                <a href="http://vkonton.github.io" target="_blank">  Vasilis Kontonis</a>, 
-              
-            
-          
-        
-      
-        
-          
-            
-              
-                <a href="http://www.tzamos.com" target="_blank">  Christos Tzamos</a>, 
-              
-            
-          
-        
-      
-        
-          
-            
-              and <em>Nikos Zarifis</em>
-            
-          
-        
-      
-    </span>
-
-    <span class="periodical">
-    
-      <em>Manuscript</em>
-      
-    </span>
-  
-<span id="DKTZ20b-materials">
- 
-    <!-- <li><a data-toggle="collapse" href="javascript:toggleDiv('DKTZ20b-bibtex')">BibTeX</a></li> -->
-    <!-- <div id="DKTZ20b-bibtex" style="display:none;"> -->
-    <!-- <pre class="collapse">@misc{DKTZ20b,
-  title = {Learning Halfspaces with Tsybakov Noise},
-  author = {Diakonikolas, Ilias and Kontonis, Vasilis and Tzamos, Christos and Zarifis, Nikos},
-  year = {2020},
-  note = {Manuscript},
-  eprint = {2006.06467},
-  arxiv = {2006.06467},
-  archiveprefix = {arXiv},
-  primaryclass = {cs.LG}
-}
-</pre> -->
-    <!-- </div> -->
-
-
-  
-  <p id="DKTZ20b-abstract" class="collapse" style="border: 1px dashed
-         black;padding:2px;
-  font-size:11px">We study the efficient PAC
-  learnability of halfspaces in the presence of Tsybakov noise. In the Tsybakov
-  noise model, each label is independently flipped with some probability which
-  is controlled by an adversary. This noise model significantly generalizes the
-  Massart noise model, by allowing the flipping probabilities to be arbitrarily
-  close to $1/2$ for a fraction of the samples. Our main result is the first
-  non-trivial PAC learning algorithm for this problem under a broad family of
-  structured distributions -- satisfying certain concentration and
-  (anti-)anti-concentration properties -- including log-concave distributions.
-  Specifically, we given an algorithm that achieves misclassification error
-  $\epsilon$ with respect to the true halfspace, with quasi-polynomial runtime
-  dependence in $1/\epsilon$. The only previous upper bound for this problem --
-  even for the special case of log-concave distributions -- was doubly
-  exponential in $1/\epsilon$ (and follows via the naive reduction to agnostic
-  learning). Our approach relies on a novel computationally efficient procedure
-  to certify whether a candidate solution is near-optimal, based on
-  semi-definite programming. We use this certificate procedure as a black-box
-  and turn it into an efficient learning algorithm by searching over the space
-  of halfspaces via online convex optimization.</p>
-  
-
-</span>
-  <!-- <span class="links"> -->
-  <!--  -->
-  <!--   [<a class="abstract">Abstract</a>] -->
-  <!--  -->
-  <!--  -->
-  <!--   [<a href="http://arxiv.org/abs/2006.06467"
-    target="_blank">arXiv</a>] -->
-  <!--  -->
-  <!--  -->
-  <!--  -->
-  <!--  -->
-  <!--  -->
-  <!--  -->
-  <!--  -->
-  <!-- </span> -->
-
-  <!-- <!-1- Hidden abstract block -1-> -->
-  <!--  -->
-  <!-- <span class="abstract hidden"> -->
-  <!--   <p>We study the efficient PAC
-  learnability of halfspaces in the presence of Tsybakov noise. In the Tsybakov
-  noise model, each label is independently flipped with some probability which
-  is controlled by an adversary. This noise model significantly generalizes the
-  Massart noise model, by allowing the flipping probabilities to be arbitrarily
-  close to $1/2$ for a fraction of the samples. Our main result is the first
-  non-trivial PAC learning algorithm for this problem under a broad family of
-  structured distributions -- satisfying certain concentration and
-  (anti-)anti-concentration properties -- including log-concave distributions.
-  Specifically, we given an algorithm that achieves misclassification error
-  $\epsilon$ with respect to the true halfspace, with quasi-polynomial runtime
-  dependence in $1/\epsilon$. The only previous upper bound for this problem --
-  even for the special case of log-concave distributions -- was doubly
-  exponential in $1/\epsilon$ (and follows via the naive reduction to agnostic
-  learning). Our approach relies on a novel computationally efficient procedure
-  to certify whether a candidate solution is near-optimal, based on
-  semi-definite programming. We use this certificate procedure as a black-box
-  and turn it into an efficient learning algorithm by searching over the space
-  of halfspaces via online convex optimization.</p> -->
   <!-- </span> -->
   <!--  -->
 </div>
