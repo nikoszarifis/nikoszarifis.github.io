@@ -249,7 +249,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 20px; }
 
 p, ul, ol, table, pre, dl {
-  margin: 0 0 30px; }
+  margin: 0 0 20px; }
 
 h1, h2, h3 {
   line-height: 1.1; }
@@ -379,7 +379,8 @@ strong {
   color: #222; }
 
 section {
-  width: 500px;
+  width: 530px;
+  /* changed from 500px*/
   float: right;
   padding-bottom: 50px; }
 
