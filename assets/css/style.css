@@ -255,7 +255,8 @@ h1, h2, h3 {
   line-height: 1.1; }
 
 h1 {
-  font-size: 28px; }
+  font-size: 25px;
+  /*changed from 28*/ }
 
 h2 {
   color: #393939; }
