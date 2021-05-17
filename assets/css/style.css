@@ -249,7 +249,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 20px; }
 
 p, ul, ol, table, pre, dl {
-  margin: 0 0 20px; }
+  margin: 0 0 30px; }
 
 h1, h2, h3 {
   line-height: 1.1; }
@@ -416,7 +416,7 @@ footer {
     border: 1px solid #e5e5e5;
     border-width: 1px 0;
     padding: 20px 0;
-    margin: 0 0 30px; }
+    margin: 0 0 20px; }
 
   header a small {
     display: inline; }
