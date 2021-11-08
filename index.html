@@ -41,7 +41,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Nikos Zarifis" />
 <script type="application/ld+json">
-{"url":"http://localhost:4000/","name":"Nikos Zarifis","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/img/img1.jpeg"}},"description":"Nikos Zarifis’ Homepage","@type":"WebSite","headline":"Nikos Zarifis","@context":"https://schema.org"}</script>
+{"headline":"Nikos Zarifis","url":"http://localhost:4000/","name":"Nikos Zarifis","description":"Nikos Zarifis’ Homepage","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/img/img1.jpeg"}},"@type":"WebSite","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   <link rel="stylesheet" href="/assets/css/style.css?v=">
@@ -102,7 +102,8 @@ information you can take a look in my <a href="./assets/img/cv.pdf">CV</a>.</p>
 
 <div id="DKKTZ21b">
   
-    <span class="title">Threshold Phenomena in Learning Halfspaces with Massart Noise <span class="nav">
+    <span class="title">Learning General Halfspaces with General Massart Noise under the
+ Gaussian Distribution <span class="nav">
     
     [<a data-toggle="collapse" href="#DKKTZ21b-abstract">abstract</a>]
     
@@ -176,7 +177,8 @@ information you can take a look in my <a href="./assets/img/cv.pdf">CV</a>.</p>
     <!-- <li><a data-toggle="collapse" href="javascript:toggleDiv('DKKTZ21b-bibtex')">BibTeX</a></li> -->
     <!-- <div id="DKKTZ21b-bibtex" style="display:none;"> -->
     <!-- <pre class="collapse">@misc{DKKTZ21b,
-  title = {Threshold Phenomena in Learning Halfspaces with Massart Noise},
+  title = {Learning General Halfspaces with General Massart Noise under the
+   Gaussian Distribution},
   author = {Diakonikolas, Ilias and Kane, Daniel M. and Kontonis, Vasilis and Tzamos, Christos and Zarifis, Nikos},
   year = {2021},
   arxiv = {2108.08767},
@@ -190,13 +192,34 @@ information you can take a look in my <a href="./assets/img/cv.pdf">CV</a>.</p>
   
   <p id="DKKTZ21b-abstract" class="collapse" style="border: 1px dashed
          black;padding:2px;
-  font-size:11px">
-We study the problem of PAC learning halfspaces on $\mathbb{R}^d$ with Massart noise under Gaussian marginals. In the Massart noise model, an adversary is allowed to flip the label of each point $\mathbf{x}$ with probability $\eta(\mathbf{x}) \leq \eta$, for some parameter $\eta \in [0,1/2]$.
-The goal of the learner is to output a hypothesis with missclassification error $\mathrm{opt} + \epsilon$, where $\mathrm{opt}$ is the error of the target halfspace. Prior work studied this problem assuming that the target halfspace is homogeneous and that the parameter $\eta$ is strictly smaller than $1/2$. We explore how the complexity of the problem changes when either of these assumptions is removed, establishing the following threshold phenomena:
-For $\eta = 1/2$, we prove a lower bound of $d^{\Omega (\log(1/\epsilon))}$ on the complexity of any Statistical Query (SQ) algorithm for the problem, which holds even for homogeneous halfspaces. On the positive side, we give a new learning algorithm for arbitrary halfspaces in this regime with sample complexity and running time $O_\epsilon(1) \, d^{O(\log(1/\epsilon))}$.
-For $\eta &lt;1/2$, we establish a lower bound of $d^{\Omega(\log(1/\gamma))}$ on the SQ complexity of the problem, where $\gamma = \max\{\epsilon, \min\{\mathbf{Pr}[f(\mathbf{x}) = 1], \mathbf{Pr}[f(\mathbf{x}) = -1]\} \}$ and $f$ is the target halfspace. In particular, this implies an SQ lower bound of $d^{\Omega (\log(1/\epsilon) )}$ for learning arbitrary Massart halfspaces (even for small constant $\eta$). We complement this lower bound with a new learning algorithm for this regime with sample complexity and runtime $d^{O_{\eta}(\log(1/\gamma))} \mathrm{poly}(1/\epsilon)$.
-Taken together, our results qualitatively characterize the complexity of learning halfspaces in the Massart model.
-</p>
+  font-size:11px">We study the problem of PAC learning halfspaces on $\mathbb{R}^d$ with
+Massart noise under the Gaussian distribution. In the Massart model, an
+adversary is allowed to flip the label of each point $\mathbf{x}$ with unknown
+probability $\eta(\mathbf{x}) \leq \eta$, for some parameter $\eta \in
+[0,1/2]$. The goal is to find a hypothesis with misclassification error of
+$\mathrm{OPT} + \epsilon$, where $\mathrm{OPT}$ is the error of the target
+halfspace. This problem had been previously studied under two assumptions: (i)
+the target halfspace is homogeneous (i.e., the separating hyperplane goes
+through the origin), and (ii) the parameter $\eta$ is strictly smaller than
+$1/2$. Prior to this work, no nontrivial bounds were known when either of these
+assumptions is removed. We study the general problem and establish the
+following:
+ For $\eta &lt;1/2$, we give a learning algorithm for general halfspaces with
+sample and computational complexity
+$d^{O_{\eta}(\log(1/\gamma))}\mathrm{poly}(1/\epsilon)$, where $\gamma
+=\max\{\epsilon, \min\{\mathbf{Pr}[f(\mathbf{x}) = 1],
+\mathbf{Pr}[f(\mathbf{x}) = -1]\} \}$ is the bias of the target halfspace $f$.
+Prior efficient algorithms could only handle the special case of $\gamma =
+1/2$. Interestingly, we establish a qualitatively matching lower bound of
+$d^{\Omega(\log(1/\gamma))}$ on the complexity of any Statistical Query (SQ)
+algorithm.
+ For $\eta = 1/2$, we give a learning algorithm for general halfspaces with
+sample and computational complexity $O_\epsilon(1) d^{O(\log(1/\epsilon))}$.
+This result is new even for the subclass of homogeneous halfspaces; prior
+algorithms for homogeneous Massart halfspaces provide vacuous guarantees for
+$\eta=1/2$. We complement our upper bound with a nearly-matching SQ lower bound
+of $d^{\Omega(\log(1/\epsilon))}$, which holds even for the special case of
+homogeneous halfspaces.</p>
   
 
 </span>
@@ -219,13 +242,34 @@ Taken together, our results qualitatively characterize the complexity of learnin
   <!-- <!-1- Hidden abstract block -1-> -->
   <!--  -->
   <!-- <span class="abstract hidden"> -->
-  <!--   <p>
-We study the problem of PAC learning halfspaces on $\mathbb{R}^d$ with Massart noise under Gaussian marginals. In the Massart noise model, an adversary is allowed to flip the label of each point $\mathbf{x}$ with probability $\eta(\mathbf{x}) \leq \eta$, for some parameter $\eta \in [0,1/2]$.
-The goal of the learner is to output a hypothesis with missclassification error $\mathrm{opt} + \epsilon$, where $\mathrm{opt}$ is the error of the target halfspace. Prior work studied this problem assuming that the target halfspace is homogeneous and that the parameter $\eta$ is strictly smaller than $1/2$. We explore how the complexity of the problem changes when either of these assumptions is removed, establishing the following threshold phenomena:
-For $\eta = 1/2$, we prove a lower bound of $d^{\Omega (\log(1/\epsilon))}$ on the complexity of any Statistical Query (SQ) algorithm for the problem, which holds even for homogeneous halfspaces. On the positive side, we give a new learning algorithm for arbitrary halfspaces in this regime with sample complexity and running time $O_\epsilon(1) \, d^{O(\log(1/\epsilon))}$.
-For $\eta <1/2$, we establish a lower bound of $d^{\Omega(\log(1/\gamma))}$ on the SQ complexity of the problem, where $\gamma = \max\{\epsilon, \min\{\mathbf{Pr}[f(\mathbf{x}) = 1], \mathbf{Pr}[f(\mathbf{x}) = -1]\} \}$ and $f$ is the target halfspace. In particular, this implies an SQ lower bound of $d^{\Omega (\log(1/\epsilon) )}$ for learning arbitrary Massart halfspaces (even for small constant $\eta$). We complement this lower bound with a new learning algorithm for this regime with sample complexity and runtime $d^{O_{\eta}(\log(1/\gamma))} \mathrm{poly}(1/\epsilon)$.
-Taken together, our results qualitatively characterize the complexity of learning halfspaces in the Massart model.
-</p> -->
+  <!--   <p>We study the problem of PAC learning halfspaces on $\mathbb{R}^d$ with
+Massart noise under the Gaussian distribution. In the Massart model, an
+adversary is allowed to flip the label of each point $\mathbf{x}$ with unknown
+probability $\eta(\mathbf{x}) \leq \eta$, for some parameter $\eta \in
+[0,1/2]$. The goal is to find a hypothesis with misclassification error of
+$\mathrm{OPT} + \epsilon$, where $\mathrm{OPT}$ is the error of the target
+halfspace. This problem had been previously studied under two assumptions: (i)
+the target halfspace is homogeneous (i.e., the separating hyperplane goes
+through the origin), and (ii) the parameter $\eta$ is strictly smaller than
+$1/2$. Prior to this work, no nontrivial bounds were known when either of these
+assumptions is removed. We study the general problem and establish the
+following:
+ For $\eta <1/2$, we give a learning algorithm for general halfspaces with
+sample and computational complexity
+$d^{O_{\eta}(\log(1/\gamma))}\mathrm{poly}(1/\epsilon)$, where $\gamma
+=\max\{\epsilon, \min\{\mathbf{Pr}[f(\mathbf{x}) = 1],
+\mathbf{Pr}[f(\mathbf{x}) = -1]\} \}$ is the bias of the target halfspace $f$.
+Prior efficient algorithms could only handle the special case of $\gamma =
+1/2$. Interestingly, we establish a qualitatively matching lower bound of
+$d^{\Omega(\log(1/\gamma))}$ on the complexity of any Statistical Query (SQ)
+algorithm.
+ For $\eta = 1/2$, we give a learning algorithm for general halfspaces with
+sample and computational complexity $O_\epsilon(1) d^{O(\log(1/\epsilon))}$.
+This result is new even for the subclass of homogeneous halfspaces; prior
+algorithms for homogeneous Massart halfspaces provide vacuous guarantees for
+$\eta=1/2$. We complement our upper bound with a nearly-matching SQ lower bound
+of $d^{\Omega(\log(1/\epsilon))}$, which holds even for the special case of
+homogeneous halfspaces.</p> -->
   <!-- </span> -->
   <!--  -->
 </div>
