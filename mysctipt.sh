@@ -1,7 +1,7 @@
 #!/bin/bash
 bundle exec jekyll serve &
 pid=$!
-sleep 3
+sleep 4
 echo $pid
 kill $pid
 cp -av * ~/Dropbox/mysites/.
