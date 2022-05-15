@@ -208,16 +208,14 @@ for a broad class of distributions (including log-concave distributions)
 and activation functions (including ReLUs and sigmoids).
 Concretely, for the class of isotropic log-concave distributions, we obtain
 the following important corollaries:
-\begin{itemize}[leftmargin=3pc, rightmargin = 1.5pc]
-\item For the logistic activation, i.e., $\sigma(t) = 1/(1+e^{-t})$, we obtain the first
+1) For the logistic activation, i.e., $\sigma(t) = 1/(1+e^{-t})$, we obtain the first
 polynomial-time constant factor approximation, even under the Gaussian distribution.
 Moreover, our algorithm has sample complexity $\wt{O}(d/\eps)$, which is tight within 
 polylogarithmic factors. 
 
-\item For the ReLU activation, i.e., $\sigma(t) = \max(0,t)$, we give an efficient algorithm with 
+2) For the ReLU activation, i.e., $\sigma(t) = \max(0,t)$, we give an efficient algorithm with 
 sample complexity $\wt{O}(d \, \polylog(1/\eps))$. Prior to our work, the best known 
 constant-factor approximate learner had sample complexity $\Omega(d/\eps)$.
-\end{itemize} 
 In both settings, our algorithms are simple, performing gradient-descent on the (regularized) $L_2^2$-loss. 
 The correctness of our algorithms relies on novel structural results that we establish, 
 showing that (essentially all) stationary points of the underlying non-convex loss
@@ -257,16 +255,14 @@ for a broad class of distributions (including log-concave distributions)
 and activation functions (including ReLUs and sigmoids).
 Concretely, for the class of isotropic log-concave distributions, we obtain
 the following important corollaries:
-\begin{itemize}[leftmargin=3pc, rightmargin = 1.5pc]
-\item For the logistic activation, i.e., $\sigma(t) = 1/(1+e^{-t})$, we obtain the first
+1) For the logistic activation, i.e., $\sigma(t) = 1/(1+e^{-t})$, we obtain the first
 polynomial-time constant factor approximation, even under the Gaussian distribution.
 Moreover, our algorithm has sample complexity $\wt{O}(d/\eps)$, which is tight within 
 polylogarithmic factors. 
 
-\item For the ReLU activation, i.e., $\sigma(t) = \max(0,t)$, we give an efficient algorithm with 
+2) For the ReLU activation, i.e., $\sigma(t) = \max(0,t)$, we give an efficient algorithm with 
 sample complexity $\wt{O}(d \, \polylog(1/\eps))$. Prior to our work, the best known 
 constant-factor approximate learner had sample complexity $\Omega(d/\eps)$.
-\end{itemize} 
 In both settings, our algorithms are simple, performing gradient-descent on the (regularized) $L_2^2$-loss. 
 The correctness of our algorithms relies on novel structural results that we establish, 
 showing that (essentially all) stationary points of the underlying non-convex loss
