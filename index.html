@@ -127,6 +127,8 @@ information you can take a look in my <a href="./assets/img/cv.pdf">CV</a>.</p>
     [<a data-toggle="collapse" href="#DKTZ22a-abstract">abstract</a>]
     
      
+    [<a href="http://arxiv.org/abs/2206.08918" target="_blank">arxiv</a>] 
+    
     
     
   </span>
@@ -187,6 +189,7 @@ information you can take a look in my <a href="./assets/img/cv.pdf">CV</a>.</p>
   title = {Learning a Single Neuron with Adversarial Label Noise via Gradient Descent},
   author = {Diakonikolas, Ilias and Kontonis, Vasilis and Tzamos, Christos and Zarifis, Nikos},
   year = {2022},
+  arxiv = {2206.08918},
   booktitle = {Proceedings of the 35th Annual Conference on Learning Theory (COLT 2022)}
 }
 </pre> -->
@@ -202,10 +205,10 @@ $\sigma:\mathbb{R} \mapsto \mathbb{R}$, with respect to the $L_2^2$-loss in the 
 Specifically, we are given labeled examples from a distribution $D$ on
 $(\mathbf{x}, y) \in \mathbb{R}^d \times \mathbb{R}$
 such that there exists $\mathbf{w}^\ast \in \R^d$ achieving $F(\mathbf{ w}^\ast)
-= \mathrm{opt}$, where
+\leq \eps$, where
 $F(\mathbf{ w}) = \mathbb{E}_{(\mathbf{x},y) \sim D}[(\sigma(\mathbf{ w}\cdot
 \mathbf{x}) - y)^2]$. The goal of the learner
-is to output a hypothesis vector $\wt{\vec w}$ such that $F(\wt{\vec w}) = C \, \opt+\eps$ with 
+is to output a hypothesis vector $\wt{\vec w}$ such that $F(\wt{\vec w}) = C \,\eps$ with 
 high probability, where $C$ is a universal constant. As our main contribution, we give
 efficient constant-factor approximate learners 
 for a broad class of distributions (including log-concave distributions)
@@ -232,6 +235,9 @@ are approximately optimal.</p>
   <!--   [<a class="abstract">Abstract</a>] -->
   <!--  -->
   <!--  -->
+  <!--   [<a href="http://arxiv.org/abs/2206.08918"
+    target="_blank">arXiv</a>] -->
+  <!--  -->
   <!--  -->
   <!--  -->
   <!--  -->
@@ -249,10 +255,10 @@ $\sigma:\mathbb{R} \mapsto \mathbb{R}$, with respect to the $L_2^2$-loss in the 
 Specifically, we are given labeled examples from a distribution $D$ on
 $(\mathbf{x}, y) \in \mathbb{R}^d \times \mathbb{R}$
 such that there exists $\mathbf{w}^\ast \in \R^d$ achieving $F(\mathbf{ w}^\ast)
-= \mathrm{opt}$, where
+\leq \eps$, where
 $F(\mathbf{ w}) = \mathbb{E}_{(\mathbf{x},y) \sim D}[(\sigma(\mathbf{ w}\cdot
 \mathbf{x}) - y)^2]$. The goal of the learner
-is to output a hypothesis vector $\wt{\vec w}$ such that $F(\wt{\vec w}) = C \, \opt+\eps$ with 
+is to output a hypothesis vector $\wt{\vec w}$ such that $F(\wt{\vec w}) = C \,\eps$ with 
 high probability, where $C$ is a universal constant. As our main contribution, we give
 efficient constant-factor approximate learners 
 for a broad class of distributions (including log-concave distributions)
