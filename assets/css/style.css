@@ -518,7 +518,7 @@ footer {
 .bibliography {
   margin-bottom: 50px;
   margin-top: 20px;
-  list-style-type: circle; }
+  list-style-type: decimal; }
   .bibliography li {
     margin: 10px 0;
     position: relative; }
