@@ -519,24 +519,24 @@ footer {
   margin-bottom: 50px;
   margin-top: 20px;
   list-style-type: circle; }
-  .bibliography ol {
+  .bibliography li {
     margin: 10px 0;
     position: relative; }
-    .bibliography ol span {
+    .bibliography li span {
       display: block; }
-    .bibliography ol .title {
+    .bibliography li .title {
       font-weight: bolder; }
-    .bibliography ol .author a {
+    .bibliography li .author a {
       border-bottom: 1px dashed #2698BA; }
-      .bibliography ol .author a:hover {
+      .bibliography li .author a:hover {
         border-bottom-style: solid;
         text-decoration: none; }
-    .bibliography ol .author > em {
+    .bibliography li .author > em {
       border-bottom: 1px solid;
       font-style: normal; }
-    .bibliography ol a.abstract, .bibliography ol a.bibtex {
+    .bibliography li a.abstract, .bibliography li a.bibtex {
       cursor: pointer; }
-    .bibliography ol .hidden {
+    .bibliography li .hidden {
       font-size: 80%;
       max-height: 0px;
       overflow: hidden;
@@ -546,23 +546,23 @@ footer {
       -ms-transition: 0.15s ease;
       -o-transition: 0.15s ease;
       transition: all 0.15s ease; }
-      .bibliography ol .hidden p {
+      .bibliography li .hidden p {
         line-height: 1.4em;
         margin: 10px; }
-      .bibliography ol .hidden pre {
+      .bibliography li .hidden pre {
         font-size: 1em;
         line-height: 1.4em;
         padding: 10px; }
-    .bibliography ol .hidden.open {
+    .bibliography li .hidden.open {
       max-height: 100em;
       -webkit-transition: 0.15s ease;
       -moz-transition: 0.15s ease;
       -ms-transition: 0.15s ease;
       -o-transition: 0.15s ease;
       transition: all 0.15s ease; }
-    .bibliography ol span.abstract.hidden {
+    .bibliography li span.abstract.hidden {
       border: dashed 1px white; }
-    .bibliography ol span.abstract.hidden.open {
+    .bibliography li span.abstract.hidden.open {
       border-color: #828282; }
   .bibliography abbr {
     position: absolute;
