@@ -504,14 +504,14 @@ footer {
 
 .publications h2 {
   color: #2698BA;
-  font-size: 32px;
+  font-size: 12px;
   margin-bottom: 30px;
   text-align: center; }
 
 .year {
   border-top: 1px solid #ccc;
   color: #ccc;
-  margin: 0 -3em -2.5ex -10em;
+  margin: 0 -3em -2.5ex -2em;
   padding-top: 1ex;
   text-align: right; }
 
