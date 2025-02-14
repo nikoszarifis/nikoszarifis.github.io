@@ -286,6 +286,140 @@ of structural results that may be useful in other settings. </p> -->
 </div></li>
 <li>
 
+<div id="DIKZ25">
+  
+    <span class="title">Robust Learning of Multi-index Models via Iterative Subspace Approximation <span class="nav">
+    
+    [<a data-toggle="collapse" href="#DIKZ25-abstract">abstract</a>]
+    
+     
+    [<a href="http://arxiv.org/abs/2502.09525" target="_blank">arxiv</a>] 
+    
+    
+    
+  </span>
+    </span>
+    <span class="author">
+      
+      
+       
+       
+       
+          
+            
+              
+                <a href="http://www.iliasdiakonikolas.org" target="_blank">  Ilias Diakonikolas</a>, 
+              
+            
+          
+        
+      
+      
+       
+       
+       
+          
+            
+              
+              Giannis  Iakovidis,
+              
+            
+          
+        
+      
+      
+       
+       
+       
+          
+            
+              
+                <a href="https://cseweb.ucsd.edu/~dakane" target="_blank">  Daniel M. Kane</a>, 
+              
+            
+          
+        
+      
+      
+       
+       
+       
+          
+            
+              and <em>Nikos Zarifis</em>
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>Manuscript</em>
+      
+ <!---   </span>
+    <span class="notes"> -->
+    
+      
+      </span>
+  
+
+<span id="DIKZ25-materials">
+ 
+    <!-- <li><a data-toggle="collapse" href="javascript:toggleDiv('DIKZ25-bibtex')">BibTeX</a></li> -->
+    <!-- <div id="DIKZ25-bibtex" style="display:none;"> -->
+    <!-- <pre class="collapse">@misc{DIKZ25,
+  title = {Robust Learning of Multi-index Models via Iterative Subspace Approximation},
+  year = {2025},
+  arxiv = {2502.09525},
+  author = {Diakonikolas, Ilias and Iakovidis, Giannis and Kane, Daniel M. and Zarifis, Nikos},
+  archiveprefix = {arXiv},
+  primaryclass = {cs.LG}
+}
+</pre> -->
+    <!-- </div> -->
+
+
+  
+  <p id="DIKZ25-abstract" class="collapse" style="border: 1px dashed
+         black;padding:2px;
+  font-size:11px">We study the task of learning Multi-Index Models (MIMs) with label noise under the Gaussian distribution. A $K$-MIM is any function $f$ that only depends on a $K$-dimensional subspace. We focus on well-behaved MIMs with finite ranges that satisfy certain regularity properties. Our main contribution is a general robust learner that is qualitatively optimal in the Statistical Query (SQ) model. Our algorithm iteratively constructs better approximations to the defining subspace by computing low-degree moments conditional on the projection to the subspace computed thus far, and adding directions with relatively large empirical moments. This procedure efficiently finds a subspace $V$ so that $f(\mathbf{x})$ is close to a function of the projection of $\mathbf{x}$ onto $V$. Conversely, for functions for which these conditional moments do not help, we prove an SQ lower bound suggesting that no efficient learner exists.
+As applications, we provide faster robust learners for the following concept classes:
+* {\bf Multiclass Linear Classifiers} We give a constant-factor approximate agnostic learner with sample complexity $N = O(d) 2^{\mathrm{poly}(K/\epsilon)}$ and computational complexity $\mathrm{poly}(N ,d)$. This is the first constant-factor agnostic learner for this class whose complexity is a fixed-degree polynomial in $d$.
+* {\bf Intersections of Halfspaces} We give an approximate agnostic learner for this class achieving 0-1 error $K \tilde{O}(\mathrm{OPT}) + \epsilon$ with sample complexity $N=O(d^2) 2^{\mathrm{poly}(K/\epsilon)}$ and computational complexity $\mathrm{poly}(N ,d)$. This is the first agnostic learner for this class with near-linear error dependence and complexity a fixed-degree polynomial in $d$.
+Furthermore, we show that in the presence of random classification noise, the complexity of our algorithm scales polynomially with $1/\epsilon$.</p>
+  
+
+</span>
+  <!-- <span class="links"> -->
+  <!--  -->
+  <!--   [<a class="abstract">Abstract</a>] -->
+  <!--  -->
+  <!--  -->
+  <!--   [<a href="http://arxiv.org/abs/2502.09525"
+    target="_blank">arXiv</a>] -->
+  <!--  -->
+  <!--  -->
+  <!--  -->
+  <!--  -->
+  <!--  -->
+  <!--  -->
+  <!--  -->
+  <!-- </span> -->
+
+  <!-- <!-1- Hidden abstract block -1-> -->
+  <!--  -->
+  <!-- <span class="abstract hidden"> -->
+  <!--   <p>We study the task of learning Multi-Index Models (MIMs) with label noise under the Gaussian distribution. A $K$-MIM is any function $f$ that only depends on a $K$-dimensional subspace. We focus on well-behaved MIMs with finite ranges that satisfy certain regularity properties. Our main contribution is a general robust learner that is qualitatively optimal in the Statistical Query (SQ) model. Our algorithm iteratively constructs better approximations to the defining subspace by computing low-degree moments conditional on the projection to the subspace computed thus far, and adding directions with relatively large empirical moments. This procedure efficiently finds a subspace $V$ so that $f(\mathbf{x})$ is close to a function of the projection of $\mathbf{x}$ onto $V$. Conversely, for functions for which these conditional moments do not help, we prove an SQ lower bound suggesting that no efficient learner exists.
+As applications, we provide faster robust learners for the following concept classes:
+* {\bf Multiclass Linear Classifiers} We give a constant-factor approximate agnostic learner with sample complexity $N = O(d) 2^{\mathrm{poly}(K/\epsilon)}$ and computational complexity $\mathrm{poly}(N ,d)$. This is the first constant-factor agnostic learner for this class whose complexity is a fixed-degree polynomial in $d$.
+* {\bf Intersections of Halfspaces} We give an approximate agnostic learner for this class achieving 0-1 error $K \tilde{O}(\mathrm{OPT}) + \epsilon$ with sample complexity $N=O(d^2) 2^{\mathrm{poly}(K/\epsilon)}$ and computational complexity $\mathrm{poly}(N ,d)$. This is the first agnostic learner for this class with near-linear error dependence and complexity a fixed-degree polynomial in $d$.
+Furthermore, we show that in the presence of random classification noise, the complexity of our algorithm scales polynomially with $1/\epsilon$.</p> -->
+  <!-- </span> -->
+  <!--  -->
+</div></li>
+<li>
+
 <div id="DKTZ24">
   
     <span class="title">Online Learning of Halfspaces with Massart Noise <span class="nav">
